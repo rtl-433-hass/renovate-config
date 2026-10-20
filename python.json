@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared update policy with pre-commit hook updates enabled",
+  "extends": ["github>rtl-433-hass/renovate-config", ":enablePreCommit"]
+}
