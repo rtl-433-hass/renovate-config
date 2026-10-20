@@ -71,7 +71,8 @@ repository's own Renovate configuration. Run the same check locally:
 npx --yes --package=renovate@44.171.8 renovate-config-validator --strict --no-global *.json
 ```
 
-The version is pinned in the workflow and managed by Renovate. Validation checks
+The validator version is pinned in the workflow; update the local command above
+when upgrading it. Validation checks
 the files in the checkout; it does not resolve remote presets, which would read
 published files rather than the proposed changes in a pull request.
 
