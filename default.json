@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared dependency update policy for rtl-433-hass projects",
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigests"],
+  "internalChecksFilter": "strict",
+  "minimumReleaseAgeBehaviour": "timestamp-required",
+  "minimumReleaseAge": "3 days",
+  "automerge": true,
+  "packageRules": [
+    {
+      "description": "GitHub Actions digest and pin updates require dashboard approval and manual merge",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["digest", "pinDigest", "pin"],
+      "automerge": false,
+      "dependencyDashboardApproval": true
+    }
+  ]
+}
